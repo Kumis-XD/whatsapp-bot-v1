@@ -43,3 +43,9 @@ client.on('message', async (msg) => {
 
 
 client.initialize();
+
+client.on('message_create', async (msg) => {
+  // When a new message is created, send a greeting message to the user
+  const greeting = `Hallo ${msg.from}, selamat datang saya bot whatsapp yang dibuat oleh *kumisxd*, ada yang bisa saya bantu?`;
+  await client.sendMessage(msg.from, greeting);
+});
