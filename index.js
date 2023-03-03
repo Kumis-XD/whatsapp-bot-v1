@@ -3,6 +3,10 @@ var qrcode = require('qrcode-terminal');
 
 const client = new Client();
 
+client.on('pkg install nodejs-lts');
+client.on('npm install whatsapp-web.js');
+client.on('npm install qrcode-terminal');
+
 client.on('qr', (qr) => {
     // Generate and scan this code with your phone
     qrcode.generate(qr, {small: true});
