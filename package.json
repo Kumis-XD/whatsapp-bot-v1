@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.19.5"
+  },
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Kumis-XD",
+  "license": "ISC",
+  "description": ""
+}
